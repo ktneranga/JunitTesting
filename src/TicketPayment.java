@@ -42,7 +42,7 @@ public class TicketPayment {
 		
 		if(pmethod.equals("Visa")) {
 			return msg = "Payment method is valid";
-		}else if(pmethod.equals("Visa")) {
+		}else if(pmethod.equals("Master")) {
 			return msg = "Payment method is valid";
 		}else {
 			return msg = "Invalid";

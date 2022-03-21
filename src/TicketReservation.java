@@ -14,16 +14,12 @@ public class TicketReservation {
 		}
 	}
 	
-	public static String classType(String classType) {
+	public static String passportNumber(String number) {
 		
 		String msg;
 		
-		if(classType.equals("Economy")) {
-			return msg = "Seats are available!";
-		}else if(classType.equals("Business")) {
-			return msg = "Seats are available!";
-		}else if(classType.equals("First")) {
-			return msg = "Seats are available!"; 
+		if(number.equals("N222222")) {
+			return msg = "Valid passport number";
 		}else {
 			return msg = "Invalid class type";
 		}
