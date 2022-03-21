@@ -92,16 +92,16 @@ class TicketReservationTest {
 	}
 
 	@Test
-	void testReserveDate() {
+	void testCheackCoupon() {
 		Scanner myObj = new Scanner(System.in);
 		String date = ""; //29/03/2022
 		
-		System.out.println("Enter reserve date: ");
+		System.out.println("Enter coupon code: ");
 		date = myObj.next();
 		
-		String actual = TicketReservation.reserveDate(date);
+		String actual = TicketReservation.chageReserveDate(date);
 		System.out.println(actual + "\n");
-		String expected = ("Valid date, flights are available");
+		String expected = ("Invalid date! cannot changed to passed date!");
 		
 		assertEquals(expected, actual);
 		

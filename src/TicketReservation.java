@@ -41,6 +41,7 @@ public class TicketReservation {
 		
 	}
 	
+	
 	public static String userEmail(String email) {
 		String msg;
 		
@@ -54,7 +55,7 @@ public class TicketReservation {
 		
 	}
 	
-	public static String reserveDate(String date) {
+	public static String chageReserveDate(String date) {
 		String msg;
 		
 		if(date.equals("29/03/2022")) {
@@ -62,7 +63,7 @@ public class TicketReservation {
 		}else if(date.equals("29/03/2022")) {
 			return msg = "Valid date, flights are available";
 		}else {
-			return msg = "Invalid! flights are not available";
+			return msg = "Invalid date! cannot changed to passed date!";
 		}
 		
 	}

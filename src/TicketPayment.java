@@ -59,6 +59,20 @@ public class TicketPayment {
 		}
 	}
 	
+	public static String cheackCoupon(String coupon) {
+		String msg;
+		
+		if(coupon.equals("CPN1423")) {
+			return msg = "Valid coupon code!";
+		}else if(coupon.equals("CPN1234")){
+			return msg = "Valid coupon code!";
+		}else {
+			return msg = "Invalid coupon code";
+		}
+		
+	}
+	
+	
 	public static String paymentDate(String date) {
 		String msg;
 		

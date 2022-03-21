@@ -106,6 +106,7 @@ class TicketPaymentTest {
 		assertEquals(expected, actual);
 		
 	}
+	
 
 	@Test
 	void testPaymentDate() {
@@ -118,10 +119,28 @@ class TicketPaymentTest {
 		
 		String actual = TicketPayment.paymentDate(date);
 		System.out.println(actual + "\n");
-		String expected = ("Valid date format!");
+		String expected = ("Invaalid date format!");
 		
 		assertEquals(expected, actual);
 		
 	}
+	
+	@Test
+	void testCheackCoupon() {
+		TicketPayment ticketPayment = new TicketPayment();
+		Scanner myObj = new Scanner(System.in);
+		String coupon = ""; //cpn1423
+		
+		System.out.println("Enter coupon code: ");
+		coupon = myObj.next();
+		
+		String actual = TicketPayment.cheackCoupon(coupon);
+		System.out.println(actual + "\n");
+		String expected = ("Invalid coupon code");
+		
+		assertEquals(expected, actual);
+		
+	}
+	
 
 }
